@@ -45,10 +45,12 @@ def encode_known_faces(known_faces):
 
 # Define known faces with explicit names
 known_faces = {
-    "louay njeh": "images/Asif.jpg",
-    "Maram": "images/maram.jpg",
-    "Nawres": "images/nawres.jpg",
-    "Said": "images/said.jpg"
+    "name1": "images/name1.jpg",
+    "name2": "images/name2.jpg",
+    "name3": "images/name3.jpg",
+    "name4": "images/name4.jpg",
+    "name5": "images/name5.jpg",
+    "name6": "images/name6.jpg",
 }
 
 # Encode known faces
@@ -67,7 +69,7 @@ def recognize_faces(known_encodings, known_names, test_encodings, threshold=0.6)
     return recognized_names
 
 # Serial port configuration
-SERIAL_PORT = 'COM5'  # Replace with your Arduino's serial port
+SERIAL_PORT = 'COM3'  # Replace with your Arduino's serial port
 BAUD_RATE = 115200    # Match this with the Arduino's baud rate
 
 # Commands
